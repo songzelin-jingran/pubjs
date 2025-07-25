@@ -207,7 +207,9 @@ window.onresize = function() {
 }
 
 img.onload = function() {
-	startSakura();
+	if(localStorage.sakura == "1"){
+		startSakura();
+	}
 }
 
 function stopp() {
