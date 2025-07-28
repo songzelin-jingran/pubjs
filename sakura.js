@@ -209,6 +209,11 @@ window.onresize = function() {
 img.onload = function() {
 	if(localStorage.sakura == "1"){
 		startSakura();
+	}else{
+		let link = document.querySelector('head link[href="https://cdn.jsdmirror.com/gh/songzelin-jingran/pubjs@main/scrollbar.css"]');
+		if (link) {
+			link.parentNode.removeChild(link);
+		}
 	}
 }
 
